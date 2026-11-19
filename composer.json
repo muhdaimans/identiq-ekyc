@@ -1,0 +1,47 @@
+{
+    "name": "prooffice/identiq-ekyc",
+    "description": "Laravel client for the IDentiQ eKYC API: onboarding journeys, results and signed webhooks.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "ekyc", "identiq", "mykad", "kyc"],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/cache": "^11.0|^12.0|^13.0",
+        "illuminate/routing": "^11.0|^12.0|^13.0",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prooffice\\IdentiqEkyc\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Prooffice\\IdentiqEkyc\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Prooffice\\IdentiqEkyc\\IdentiqServiceProvider"
+            ],
+            "aliases": {
+                "Identiq": "Prooffice\\IdentiqEkyc\\Facades\\Identiq"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
