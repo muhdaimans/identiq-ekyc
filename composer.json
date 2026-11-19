@@ -1,5 +1,5 @@
 {
-    "name": "prooffice/identiq-ekyc",
+    "name": "muhdaimans/identiq-ekyc",
     "description": "Laravel client for the IDentiQ eKYC API: onboarding journeys, results and signed webhooks.",
     "type": "library",
     "license": "MIT",

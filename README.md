@@ -7,7 +7,7 @@ Requires PHP 8.2+ and Laravel 11, 12 or 13.
 ## Install
 
 ```bash
-composer require prooffice/identiq-ekyc
+composer require muhdaimans/identiq-ekyc
 php artisan vendor:publish --tag=identiq-config   # optional
 ```
 
