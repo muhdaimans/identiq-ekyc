@@ -1,6 +1,6 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Exceptions;
+namespace Muhdaimans\IdentiqEkyc\Exceptions;
 
 use RuntimeException;
 

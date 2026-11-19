@@ -1,6 +1,6 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Exceptions;
+namespace Muhdaimans\IdentiqEkyc\Exceptions;
 
 /**
  * 403: missing scope (insufficient_scope), client without a tenant or inactive,

@@ -1,6 +1,6 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc;
+namespace Muhdaimans\IdentiqEkyc;
 
 use InvalidArgumentException;
 

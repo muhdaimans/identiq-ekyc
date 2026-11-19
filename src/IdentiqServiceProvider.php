@@ -1,15 +1,15 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc;
+namespace Muhdaimans\IdentiqEkyc;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\Client\Factory as Http;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Prooffice\IdentiqEkyc\Auth\TokenProvider;
-use Prooffice\IdentiqEkyc\Http\VerifyWebhookSignature;
-use Prooffice\IdentiqEkyc\Http\WebhookController;
-use Prooffice\IdentiqEkyc\Webhooks\SignatureVerifier;
+use Muhdaimans\IdentiqEkyc\Auth\TokenProvider;
+use Muhdaimans\IdentiqEkyc\Http\VerifyWebhookSignature;
+use Muhdaimans\IdentiqEkyc\Http\WebhookController;
+use Muhdaimans\IdentiqEkyc\Webhooks\SignatureVerifier;
 
 class IdentiqServiceProvider extends ServiceProvider
 {

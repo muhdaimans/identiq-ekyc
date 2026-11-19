@@ -1,8 +1,8 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Data;
+namespace Muhdaimans\IdentiqEkyc\Data;
 
-use Prooffice\IdentiqEkyc\Enums\CheckResult;
+use Muhdaimans\IdentiqEkyc\Enums\CheckResult;
 
 final readonly class Check
 {

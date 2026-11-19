@@ -1,6 +1,6 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Data;
+namespace Muhdaimans\IdentiqEkyc\Data;
 
 /**
  * The normalised result. icNumber is masked (******-**-1234) unless the token

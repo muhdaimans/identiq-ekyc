@@ -1,6 +1,6 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Exceptions;
+namespace Muhdaimans\IdentiqEkyc\Exceptions;
 
 /**
  * The platform could not be reached, or the request timed out.

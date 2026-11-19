@@ -1,11 +1,11 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Http;
+namespace Muhdaimans\IdentiqEkyc\Http;
 
 use Closure;
 use Illuminate\Http\Request;
-use Prooffice\IdentiqEkyc\Exceptions\InvalidWebhookSignature;
-use Prooffice\IdentiqEkyc\Webhooks\SignatureVerifier;
+use Muhdaimans\IdentiqEkyc\Exceptions\InvalidWebhookSignature;
+use Muhdaimans\IdentiqEkyc\Webhooks\SignatureVerifier;
 use Symfony\Component\HttpFoundation\Response;
 
 class VerifyWebhookSignature

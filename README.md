@@ -27,9 +27,9 @@ Add `results:read_pii` to the scopes to receive unmasked IC numbers, and `result
 ## Create a journey
 
 ```php
-use Prooffice\IdentiqEkyc\Data\OnboardingRequest;
-use Prooffice\IdentiqEkyc\Enums\{Channel, Locale};
-use Prooffice\IdentiqEkyc\Facades\Identiq;
+use Muhdaimans\IdentiqEkyc\Data\OnboardingRequest;
+use Muhdaimans\IdentiqEkyc\Enums\{Channel, Locale};
+use Muhdaimans\IdentiqEkyc\Facades\Identiq;
 
 $link = Identiq::createOnboarding(new OnboardingRequest(
     clientReference: $applicant->id,
@@ -104,11 +104,11 @@ The package registers `POST /identiq/webhook` (`identiq.webhooks.path`), named `
 
 1. checks `X-Ekyc-Signature` / `X-Ekyc-Signature-Previous` against every configured secret, over the raw body, in constant time, and refuses timestamps more than 5 minutes off (401);
 2. acknowledges a repeat `event_id` without dispatching it again;
-3. dispatches `Prooffice\IdentiqEkyc\Events\WebhookReceived`.
+3. dispatches `Muhdaimans\IdentiqEkyc\Events\WebhookReceived`.
 
 ```php
-use Prooffice\IdentiqEkyc\Enums\WebhookEventType;
-use Prooffice\IdentiqEkyc\Events\WebhookReceived;
+use Muhdaimans\IdentiqEkyc\Enums\WebhookEventType;
+use Muhdaimans\IdentiqEkyc\Events\WebhookReceived;
 
 Event::listen(function (WebhookReceived $received) {
     $event = $received->webhook;

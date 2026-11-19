@@ -1,8 +1,8 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Webhooks;
+namespace Muhdaimans\IdentiqEkyc\Webhooks;
 
-use Prooffice\IdentiqEkyc\Exceptions\InvalidWebhookSignature;
+use Muhdaimans\IdentiqEkyc\Exceptions\InvalidWebhookSignature;
 
 /**
  * signature = hex( HMAC-SHA256( secret, "{X-Ekyc-Timestamp}.{raw request body}" ) )

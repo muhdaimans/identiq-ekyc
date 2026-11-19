@@ -1,6 +1,6 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc;
+namespace Muhdaimans\IdentiqEkyc;
 
 use DateTimeInterface;
 use InvalidArgumentException;
@@ -11,17 +11,17 @@ use Illuminate\Http\Client\Response;
 use Illuminate\Support\LazyCollection;
 use Illuminate\Support\Sleep;
 use Illuminate\Support\Str;
-use Prooffice\IdentiqEkyc\Auth\TokenProvider;
-use Prooffice\IdentiqEkyc\Data\IssuedLink;
-use Prooffice\IdentiqEkyc\Data\Journey;
-use Prooffice\IdentiqEkyc\Data\JourneyPage;
-use Prooffice\IdentiqEkyc\Data\LinkRequest;
-use Prooffice\IdentiqEkyc\Data\OnboardingRequest;
-use Prooffice\IdentiqEkyc\Exceptions\ConflictException;
-use Prooffice\IdentiqEkyc\Exceptions\ConnectionException;
-use Prooffice\IdentiqEkyc\Exceptions\IdentiqException;
-use Prooffice\IdentiqEkyc\Exceptions\RateLimitedException;
-use Prooffice\IdentiqEkyc\Exceptions\ServerException;
+use Muhdaimans\IdentiqEkyc\Auth\TokenProvider;
+use Muhdaimans\IdentiqEkyc\Data\IssuedLink;
+use Muhdaimans\IdentiqEkyc\Data\Journey;
+use Muhdaimans\IdentiqEkyc\Data\JourneyPage;
+use Muhdaimans\IdentiqEkyc\Data\LinkRequest;
+use Muhdaimans\IdentiqEkyc\Data\OnboardingRequest;
+use Muhdaimans\IdentiqEkyc\Exceptions\ConflictException;
+use Muhdaimans\IdentiqEkyc\Exceptions\ConnectionException;
+use Muhdaimans\IdentiqEkyc\Exceptions\IdentiqException;
+use Muhdaimans\IdentiqEkyc\Exceptions\RateLimitedException;
+use Muhdaimans\IdentiqEkyc\Exceptions\ServerException;
 
 class IdentiqClient
 {

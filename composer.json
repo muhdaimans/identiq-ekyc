@@ -18,21 +18,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Prooffice\\IdentiqEkyc\\": "src/"
+            "Muhdaimans\\IdentiqEkyc\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Prooffice\\IdentiqEkyc\\Tests\\": "tests/"
+            "Muhdaimans\\IdentiqEkyc\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Prooffice\\IdentiqEkyc\\IdentiqServiceProvider"
+                "Muhdaimans\\IdentiqEkyc\\IdentiqServiceProvider"
             ],
             "aliases": {
-                "Identiq": "Prooffice\\IdentiqEkyc\\Facades\\Identiq"
+                "Identiq": "Muhdaimans\\IdentiqEkyc\\Facades\\Identiq"
             }
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Exceptions;
+namespace Muhdaimans\IdentiqEkyc\Exceptions;
 
 /**
  * Missing, expired or revoked token, or the token request was refused (401).

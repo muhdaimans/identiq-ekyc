@@ -1,10 +1,10 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Data;
+namespace Muhdaimans\IdentiqEkyc\Data;
 
 use Carbon\CarbonImmutable;
-use Prooffice\IdentiqEkyc\Enums\ClientState;
-use Prooffice\IdentiqEkyc\Enums\RevisionCause;
+use Muhdaimans\IdentiqEkyc\Enums\ClientState;
+use Muhdaimans\IdentiqEkyc\Enums\RevisionCause;
 
 final readonly class Revision
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Http;
+namespace Muhdaimans\IdentiqEkyc\Http;
 
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Prooffice\IdentiqEkyc\Data\WebhookEvent;
-use Prooffice\IdentiqEkyc\Events\WebhookReceived;
+use Muhdaimans\IdentiqEkyc\Data\WebhookEvent;
+use Muhdaimans\IdentiqEkyc\Events\WebhookReceived;
 
 /**
  * Receives a signed delivery (checked by VerifyWebhookSignature), skips an

@@ -1,6 +1,6 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Exceptions;
+namespace Muhdaimans\IdentiqEkyc\Exceptions;
 
 /**
  * 409: the journey is final (journey_terminal), or the first request with the

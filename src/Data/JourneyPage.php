@@ -1,6 +1,6 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Data;
+namespace Muhdaimans\IdentiqEkyc\Data;
 
 final readonly class JourneyPage
 {

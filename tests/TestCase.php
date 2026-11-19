@@ -1,9 +1,9 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Tests;
+namespace Muhdaimans\IdentiqEkyc\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Prooffice\IdentiqEkyc\IdentiqServiceProvider;
+use Muhdaimans\IdentiqEkyc\IdentiqServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

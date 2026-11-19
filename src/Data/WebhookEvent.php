@@ -1,11 +1,11 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Data;
+namespace Muhdaimans\IdentiqEkyc\Data;
 
 use Carbon\CarbonImmutable;
-use Prooffice\IdentiqEkyc\Enums\ClientState;
-use Prooffice\IdentiqEkyc\Enums\RecaptureGroup;
-use Prooffice\IdentiqEkyc\Enums\WebhookEventType;
+use Muhdaimans\IdentiqEkyc\Enums\ClientState;
+use Muhdaimans\IdentiqEkyc\Enums\RecaptureGroup;
+use Muhdaimans\IdentiqEkyc\Enums\WebhookEventType;
 
 final readonly class WebhookEvent
 {

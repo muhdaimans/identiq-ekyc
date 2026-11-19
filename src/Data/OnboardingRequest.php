@@ -1,10 +1,10 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Data;
+namespace Muhdaimans\IdentiqEkyc\Data;
 
-use Prooffice\IdentiqEkyc\Enums\Channel;
-use Prooffice\IdentiqEkyc\Enums\Locale;
-use Prooffice\IdentiqEkyc\Enums\SandboxOutcome;
+use Muhdaimans\IdentiqEkyc\Enums\Channel;
+use Muhdaimans\IdentiqEkyc\Enums\Locale;
+use Muhdaimans\IdentiqEkyc\Enums\SandboxOutcome;
 
 final readonly class OnboardingRequest
 {

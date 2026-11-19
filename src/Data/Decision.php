@@ -1,9 +1,9 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Data;
+namespace Muhdaimans\IdentiqEkyc\Data;
 
 use Carbon\CarbonImmutable;
-use Prooffice\IdentiqEkyc\Enums\DecisionOutcome;
+use Muhdaimans\IdentiqEkyc\Enums\DecisionOutcome;
 
 final readonly class Decision
 {

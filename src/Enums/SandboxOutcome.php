@@ -1,6 +1,6 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Enums;
+namespace Muhdaimans\IdentiqEkyc\Enums;
 
 enum SandboxOutcome: string
 {

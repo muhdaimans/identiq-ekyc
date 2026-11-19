@@ -1,25 +1,25 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Tests\Feature;
+namespace Muhdaimans\IdentiqEkyc\Tests\Feature;
 
 use Carbon\CarbonImmutable;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Sleep;
-use Prooffice\IdentiqEkyc\Data\OnboardingRequest;
-use Prooffice\IdentiqEkyc\Enums\Channel;
-use Prooffice\IdentiqEkyc\Enums\ClientState;
-use Prooffice\IdentiqEkyc\Enums\DecisionOutcome;
-use Prooffice\IdentiqEkyc\Enums\Locale;
-use Prooffice\IdentiqEkyc\Exceptions\AuthenticationException;
-use Prooffice\IdentiqEkyc\Exceptions\AuthorizationException;
-use Prooffice\IdentiqEkyc\Exceptions\ConflictException;
-use Prooffice\IdentiqEkyc\Exceptions\NotFoundException;
-use Prooffice\IdentiqEkyc\Exceptions\OnboardingSuspendedException;
-use Prooffice\IdentiqEkyc\Exceptions\RateLimitedException;
-use Prooffice\IdentiqEkyc\Exceptions\ValidationException;
-use Prooffice\IdentiqEkyc\Facades\Identiq;
-use Prooffice\IdentiqEkyc\Tests\TestCase;
+use Muhdaimans\IdentiqEkyc\Data\OnboardingRequest;
+use Muhdaimans\IdentiqEkyc\Enums\Channel;
+use Muhdaimans\IdentiqEkyc\Enums\ClientState;
+use Muhdaimans\IdentiqEkyc\Enums\DecisionOutcome;
+use Muhdaimans\IdentiqEkyc\Enums\Locale;
+use Muhdaimans\IdentiqEkyc\Exceptions\AuthenticationException;
+use Muhdaimans\IdentiqEkyc\Exceptions\AuthorizationException;
+use Muhdaimans\IdentiqEkyc\Exceptions\ConflictException;
+use Muhdaimans\IdentiqEkyc\Exceptions\NotFoundException;
+use Muhdaimans\IdentiqEkyc\Exceptions\OnboardingSuspendedException;
+use Muhdaimans\IdentiqEkyc\Exceptions\RateLimitedException;
+use Muhdaimans\IdentiqEkyc\Exceptions\ValidationException;
+use Muhdaimans\IdentiqEkyc\Facades\Identiq;
+use Muhdaimans\IdentiqEkyc\Tests\TestCase;
 
 class ClientTest extends TestCase
 {
@@ -211,7 +211,7 @@ class ClientTest extends TestCase
         try {
             Identiq::reissueLink('J-1');
             $this->fail("Expected {$class}");
-        } catch (\Prooffice\IdentiqEkyc\Exceptions\IdentiqException $e) {
+        } catch (\Muhdaimans\IdentiqEkyc\Exceptions\IdentiqException $e) {
             $this->assertInstanceOf($class, $e);
             $this->assertSame($status, $e->status);
             $this->assertSame($body['error'], $e->errorCode);

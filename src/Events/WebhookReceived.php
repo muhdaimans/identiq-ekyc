@@ -1,8 +1,8 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Events;
+namespace Muhdaimans\IdentiqEkyc\Events;
 
-use Prooffice\IdentiqEkyc\Data\WebhookEvent;
+use Muhdaimans\IdentiqEkyc\Data\WebhookEvent;
 
 /**
  * A verified, not yet seen IDentiQ webhook delivery.

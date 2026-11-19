@@ -1,8 +1,8 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Data;
+namespace Muhdaimans\IdentiqEkyc\Data;
 
-use Prooffice\IdentiqEkyc\Enums\Channel;
+use Muhdaimans\IdentiqEkyc\Enums\Channel;
 
 final readonly class LinkRequest
 {

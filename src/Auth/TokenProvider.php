@@ -1,16 +1,16 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Auth;
+namespace Muhdaimans\IdentiqEkyc\Auth;
 
 use Illuminate\Contracts\Cache\Repository as Cache;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Contracts\Encryption\Encrypter;
 use Illuminate\Http\Client\ConnectionException as HttpConnectionException;
 use Illuminate\Http\Client\Factory as Http;
-use Prooffice\IdentiqEkyc\Exceptions\AuthenticationException;
-use Prooffice\IdentiqEkyc\Exceptions\ConnectionException;
-use Prooffice\IdentiqEkyc\Exceptions\IdentiqException;
-use Prooffice\IdentiqEkyc\IdentiqConfig;
+use Muhdaimans\IdentiqEkyc\Exceptions\AuthenticationException;
+use Muhdaimans\IdentiqEkyc\Exceptions\ConnectionException;
+use Muhdaimans\IdentiqEkyc\Exceptions\IdentiqException;
+use Muhdaimans\IdentiqEkyc\IdentiqConfig;
 
 /**
  * OAuth 2.0 client credentials. Tokens last 60 minutes; they are cached,

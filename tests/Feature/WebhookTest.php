@@ -1,14 +1,14 @@
 <?php
 
-namespace Prooffice\IdentiqEkyc\Tests\Feature;
+namespace Muhdaimans\IdentiqEkyc\Tests\Feature;
 
 use Illuminate\Support\Facades\Event;
-use Prooffice\IdentiqEkyc\Enums\ClientState;
-use Prooffice\IdentiqEkyc\Enums\RecaptureGroup;
-use Prooffice\IdentiqEkyc\Enums\WebhookEventType;
-use Prooffice\IdentiqEkyc\Events\WebhookReceived;
-use Prooffice\IdentiqEkyc\Tests\TestCase;
-use Prooffice\IdentiqEkyc\Webhooks\SignatureVerifier;
+use Muhdaimans\IdentiqEkyc\Enums\ClientState;
+use Muhdaimans\IdentiqEkyc\Enums\RecaptureGroup;
+use Muhdaimans\IdentiqEkyc\Enums\WebhookEventType;
+use Muhdaimans\IdentiqEkyc\Events\WebhookReceived;
+use Muhdaimans\IdentiqEkyc\Tests\TestCase;
+use Muhdaimans\IdentiqEkyc\Webhooks\SignatureVerifier;
 
 class WebhookTest extends TestCase
 {
